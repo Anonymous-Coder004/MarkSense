@@ -1,4 +1,4 @@
-# Production-Ready Attendance Management System
+# MrkSense - Production-Ready Attendance Management System
 
 A comprehensive attendance management system built with React, Flask, and MongoDB, featuring AI-powered face recognition, mask detection, and liveness detection.
 

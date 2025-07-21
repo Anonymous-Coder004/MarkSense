@@ -31,7 +31,9 @@ def home():
 jwt = JWTManager(app)
 
 # MongoDB connection
-client = MongoClient("mongodb+srv://yash13sri:yash%401234@attendance-manager.wtbw2v0.mongodb.net/?retryWrites=true&w=majority&appName=attendance-manager",server_api=ServerApi('1'))
+with open("mongo_cred.txt", "r") as file:
+    mongo_uri = file.read().strip()
+client = MongoClient(mongo_uri,server_api=ServerApi('1'))
 # Access your database (create one if it doesn't exist)
 db = client["attendance_manager"]
 try:
